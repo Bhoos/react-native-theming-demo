@@ -19,7 +19,7 @@ const themes = [
   createTheme({
     backgroundColor: 'white',
     textColor: 'black',
-    buttonColor: 'blue',
+    buttonColor: '0, 0, 255',
     buttonText: 'white',
     icon: require('./icons/default.png'),
     statusBar: 'dark-content',
@@ -27,7 +27,7 @@ const themes = [
   createTheme({
     backgroundColor: 'black',
     textColor: 'white',
-    buttonColor: 'yellow',
+    buttonColor: '255, 255, 0',
     buttonText: 'black',
     icon: require('./icons/colorful.png'),
     statusBar: 'light-content',
@@ -55,7 +55,7 @@ const styles = createStyle({
   button: {
     margin: 10,
     padding: 10,
-    backgroundColor: '@buttonColor',
+    backgroundColor: 'rgba(@buttonColor, 0.5)',
     borderRadius: 3,
     flex: 1,
     alignItems: 'center',
